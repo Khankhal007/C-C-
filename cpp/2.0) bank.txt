@@ -1,0 +1,116 @@
+#include <iostream>
+using namespace std;
+
+int totalamount = 500;
+
+class Bank
+{
+public:
+    int pin()
+    {
+        int pin;
+
+    lables:
+        cout << "\n\n  Enter your pin : ";
+        cin >> pin;
+
+        if (pin == 1111 || pin == 2222 || pin == 3333 || pin == 4444)
+        {
+            return pin;
+        }
+        else
+        {
+            cout << "\n Retry to enter pin";
+            goto lables;
+        }
+    }
+
+    int withdraw()
+    {
+        int withdraw;
+
+        cout << "\nEnter amount : ";
+        cin >> withdraw;
+
+        if (withdraw < 0)
+        {
+            cout << "\n Plz enter legal Amount" << endl;
+        }
+        else if (totalamount >= withdraw)
+        {
+
+            cout << "\n amount :- " << totalamount;
+            totalamount -= withdraw;
+            cout << "\n Withdraw : " << withdraw;
+            cout << "\n Total amount :- " << totalamount;
+            cout << "\n\n";
+        }
+        else
+        {
+            cout << "\n\n Insufficent amount in your bank account \n\n";
+        }
+    }
+
+    int deposit()
+    {
+    lable:
+        int deposit;
+
+        cout << "\n\nEnter amount : ";
+        cin >> deposit;
+
+        if (deposit <= 0)
+        {
+            cout << "plz  enter legale Amount " << endl;
+            goto lable;
+        }
+        else
+        {
+            cout << "\n Amount :- " << totalamount;
+            cout << "\n Deposite amount :- " << deposit;
+            totalamount += deposit;
+            cout << "\n Total Amount : " << totalamount << endl;
+        }
+    }
+};
+
+int main()
+{
+    int chosse;
+    Bank with, depo, password;
+
+    password.pin();
+
+chosse:
+
+    cout << "\n Withdraw - 1 \n Deposite - 2 \n exit - 3 \t\t  ::-- ";
+    cin >> chosse;
+
+    switch (chosse)
+    {
+    case 1:
+
+        with.withdraw();
+        goto chosse;
+
+        break;
+
+    case 2:
+
+        depo.deposit();
+        goto chosse;
+        break;
+
+    case 3:
+
+        cout << "\n\n Good byy\n\n";
+        break;
+
+    default:
+
+        cout << "\n\nError for chosse number : \n\n";
+        goto chosse;
+
+        break;
+    }
+}

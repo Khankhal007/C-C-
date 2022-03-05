@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "PRG_25_Var ( vowel & consonant).C": "cpp",
+        "PRG_20~1var (grade).C": "cpp",
+        "PRG_13_Var (leap year).C": "cpp",
+        "PRG_18_Var ( hra-da).C": "cpp",
+        "PRG_14_Var (positive & negitive).C": "cpp",
+        "PRG_10_VAR( if greterthan prg).C": "cpp",
+        "PRG_22~1var(incomr tax).C": "cpp",
+        "PRG_23_Var (unit).C": "cpp",
+        "PRG_34_Var( 1 to 10 total).C": "cpp",
+        "PRG_35_ odd total ( 1 to 10 ).C": "cpp",
+        "PRG_36_even total (1 to 10).C": "cpp",
+        "cmath": "cpp",
+        "prg 73 (ARRAY_delete).C": "cpp",
+        "STRING_202_( array sathe 127 char without space).C": "cpp"
+    }
+}
